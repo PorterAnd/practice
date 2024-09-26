@@ -1,0 +1,6 @@
+def encode(key, numbers):
+    encoded_numbers = []
+    for number in numbers:
+        encoded_numbers.append((number+key)%10)
+    print('Your encoded message is: ', *encoded_numbers)
+encode(2, [1,2,3])
